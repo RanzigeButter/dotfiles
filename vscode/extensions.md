@@ -8,7 +8,7 @@ Appearance:
 Tools:
 
 - rangav.vscode-thunder-client
-- liximomo.sftp
+- natizyskunk.sftp
 
 Languages:
 
