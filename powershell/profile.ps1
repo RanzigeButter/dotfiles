@@ -84,12 +84,12 @@ Set-Alias "ssha" "Add-SshKey"
 # Composer
 # ==============================================================================
 
-function fuckphp { Remove-Item -Recurse -Force vendor, composer.lock; composer clear-cache; composer update }
+function fuckphp { Remove-Item -Recurse -Force -ea 0 vendor, composer.lock; composer clear-cache; composer update }
 
 # npm
 # ==============================================================================
 
-function fuckjs { Remove-Item -Recurse -Force node_modules, package-lock.json; npm install }
+function fuckjs { Remove-Item -Recurse -Force -ea 0 node_modules, package-lock.json; npm install }
 function nid([string[]]$package) { npm install --save-prod $package }
 function nidd([string[]]$package) { npm install --save-dev $package }
 function no { npm outdated }
